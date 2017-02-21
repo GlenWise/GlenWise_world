@@ -4,7 +4,7 @@ class CategoriesController < ApplicationController
     @categories = Category.alphabetical.paginate(:page => params[:page]).per_page(10)
   end
 
-
+#asdf
   def show
     @category = Category.find(params[:id])
   end
